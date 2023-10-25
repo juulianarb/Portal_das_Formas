@@ -1,0 +1,85 @@
+/* font-family: 'Montserrat', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playpen Sans', cursive; */
+
+:root {
+    --color-yellow: #FFF3A6;
+    --color-azul: #42B2FC;
+    --color-green: #89FF7F;
+    --color-orange: #FCC542;
+    --color-pink: #FF99D3;
+}
+
+* {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/backgroundpage.svg);
+    background-size: contain;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 3%;
+    background: rgb(162,250,166);
+background: linear-gradient(90deg, rgba(162,250,166,0.42629551820728295) 2%, rgba(249,164,244,0.4515056022408963) 44%, rgba(215,255,234,0.6307773109243697) 100%);
+}
+
+header nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a {
+    cursor: pointer;
+    color: #6f716f;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li .amarelo:hover {
+    color: var(--color-yellow);
+    transition: 0.3s;
+}
+
+header nav ul li .azul:hover {
+    color: var(--color-azul);
+    transition: 0.3s;
+}
+
+header nav ul li .verde:hover {
+    color: var(--color-green);
+    transition: 0.3s;
+}
+
+header nav ul li .laranja:hover {
+    color: var(--color-orange);
+    transition: 0.3s;
+}
+
+header nav ul li .rosa:hover {
+    color: var(--color-pink);
+    transition: 0.3s;
+}
+
+.main-txt {
+text-align: center;
+margin-top: 30px;
+font-size: 30px;
+}
+
+.maintxt-h1 {
+    font-family: 'Playpen Sans', cursive;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.4);
+}
