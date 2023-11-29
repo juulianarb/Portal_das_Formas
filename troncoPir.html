@@ -2,41 +2,104 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playpen+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/images/icones/iconefavicon.png">
-    <title>Tronco da pirâmide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playpen+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/icones/iconefavicon.png">
+  <title>Circulo</title>
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img class="img-logo"  src="assets/images/icones/iconelogo1.png" alt="logo"></a>
+  <header>
+    <a href="index.html"><img class="img-logo" src="assets/images/icones/iconelogo1.png" alt="logo"></a>
 
-        <nav>
-            <ul>
-                <li><a class="amarelo" href="circulo.html">Círculo</a></li>
-                <li><a class="azul" href="troncoPir.html">Tronco da pirâmide</a></li>
-                <li><a class="verde" href="rectangle.html">Retângulo</a></li>
-                <li><a class="laranja" href="coroa.html">Coroa do Círculo</a></li>
-                <li><a class="rosa" href="hexagon.html">Hexágono Regular</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a class="amarelo" href="circulo.html">Círculo</a></li>
+        <li><a class="azul" href="troncoPir.html">Tronco da pirâmide</a></li>
+        <li><a class="verde" href="rectangle.html">Retângulo</a></li>
+        <li><a class="laranja" href="coroa.html">Coroa do Círculo</a></li>
+        <li><a class="rosa" href="hexagon.html">Hexágono Regular</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="container">
 
-    <section class="Home">
-       
+    <section>
+      <img id="math-img" src="assets/images/matematicaazul.svg" alt="Homem lendo um livro" width="500" height="580" />
     </section>
-    <footer>
-        <P> &copy; <i>2023 Todos os direitos reservados.</i>
-          </P>
-      </footer>
+
+    <section id="calculadora">
+      <form id="form">
+
+        <h1 class="title-form">Calculadora - Tronco da pirâmide <i class="fa-solid fa-pencil"></i></h1>
+
+        <div id="input-box">
+          <label for="baseMaior">Digite a base maior:</label>
+        </div>
+
+        <div id="input-field">
+          <i class="fa-solid fa-ruler"></i>
+          <input type="number" id="baseMaior" required>
+          <span>base</span>
+        </div>
+
+        <div id="input-box">
+            <label for="basemenor">Digite a base menor:</label>
+          </div>
+  
+          <div id="input-field">
+            <i class="fa-solid fa-ruler"></i>
+            <input type="number" id="baseMenor" required>
+            <span>base</span>
+          </div>
+
+        <button id="Calculate">Calcular</button>
+
+      </form>
+      <div id="infos" class="hidden">
+
+        <div id="result">
+
+          <div id="area">
+
+            <span id="value"></span>
+
+            <span>É a área do tronco da pirâmide.</span>
+
+          </div>
+
+          <div id="description">
+
+            <span></span>
+
+          </div>
+        </div>
+
+        <div id="more-info">
+          <a href="https://mundoeducacao.uol.com.br/matematica/area-tronco-piramide.htm#:~:text=A%20%C3%A1rea%20do%20tronco%20da,bases%20com%20a%20%C3%A1rea%20lateral.&text=A%20%C3%A1rea%20do%20tronco%20da%20pir%C3%A2mide%20pode%20ser%20calculada%20de,%2C%20depois%2C%20somar%20esses%20resultados." target="_blank">Mais informações sobre a área do
+            tronco da pirâmide
+            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <P> &copy; <i>2023 Todos os direitos reservados.</i>
+    </P>
+  </footer>
+  <script src="assets/js/troncopir.js"></script>
 </body>
 
 </html>
